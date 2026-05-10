@@ -52,7 +52,7 @@ await selectColor.selectOption(['Red','Green']);
 //--------------------------Hover====================================
 await page.getByRole('button',{name:'Point Me'}).hover();
 await expect(page).toHaveTitle('Automation Testing Practice');
-await expect(page.getByRole('button',{name:'Point Me'})).toBeEnabled();
+await expect(page.getByRole('button',{name:'Point Me'})).toBeEnabled(); 
  
 await expect(page).toHaveURL('https://testautomationpractice.blogspot.com');  
 
@@ -65,6 +65,8 @@ const rtn=await btn.isEnabled();
 console.log('it should retun :',rtn);
 const dis=await btn.isDisabled()
 console.log(dis);
+//-----------------------------------------------------------------
+
 
 
 
